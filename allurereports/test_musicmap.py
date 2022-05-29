@@ -10,7 +10,7 @@ class TestMusicMaP:
         self.driver = webdriver.Chrome()
         self.driver.get("https://www.music-map.com/")
         status = self.driver.find_element(By.XPATH, '//*[@id="the_title"]').is_displayed()
-        if status == True:
+        if status:
             assert True
         else:
             assert False
