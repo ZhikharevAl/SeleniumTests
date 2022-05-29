@@ -34,3 +34,7 @@ class TestMusicMaP:
             allure.attach(self.driver.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
             self.driver.close()
             assert False
+
+    @allure.severity(allure.severity_level.NORMAL)
+    def test_authentication(self):
+        pytest.skip('skipping test')
